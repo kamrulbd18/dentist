@@ -1,0 +1,160 @@
+.slicknav_menu{
+	display: none;
+}
+#menu{
+	display: block;
+}
+
+@media screen and (max-width: 1024px) {
+	.menu-area .col-md-10.col-sm-12 {
+		padding-right: 0;
+	}
+	.nav-top ul li a {
+		padding: 12px 14px;
+	}
+	.dSearchTitle h2 {
+		color: #fff;
+		text-align: center;
+		font-size: 21px;
+		margin-bottom: 20px;
+	}
+	.dental-search input[type="text"] {
+		font-size: 12px;
+	}
+	.typeSpecialist ul li {
+		font-size: 13px;
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+.nav-top ul li a {
+	padding: 12px 8px;
+}
+.dHeaderExtra img {
+	width: 100%;
+}
+.singlePackage, .singleDeal, .tblogSingle, .articleSingle {
+	margin-bottom: 25px;
+}
+.footer-widget {
+	min-height: 196px;
+}
+.ht-left p {
+	font-size: 10px;
+}
+
+}
+
+@media screen and (max-width: 767px) {
+	.slicknav_menu{
+		display: block;
+	}
+	#menu{
+		display: none;
+	}
+.ht-right ul li i.fa {
+	font-size: 11px;
+}
+.ht-right ul li a {
+	padding: 1px 6px;
+}
+
+}
+
+@media screen and (max-width: 640px) {
+
+}
+
+@media screen and (max-width: 480px) {
+#searchLocation {
+	width: 100%;
+	margin-right: 0;
+	margin-bottom: 13px;
+}
+#selectDoctor {
+	width: 100%;
+	padding-left: 39px;
+	margin-left: 0;
+}
+.typeSpecialist ul li {
+	float: none;
+	margin-right: 0;
+}
+.search-area {
+	padding: 59px 0;
+	min-height: 390px;
+}
+.dSearchTitle h2 {
+	font-size: 23px;
+}
+.dLogo img {
+	width: 137px;
+	margin: 9px 0;
+}
+.dHeaderExtra img {
+	width: 150px;
+}
+.slicknav_menu {
+	background: #217ED3;
+	position: absolute;
+	width: 100%;
+	z-index: 999;
+	top: 112px;
+	padding: 0 5px;
+}
+.slicknav_menu .slicknav_menutxt {
+	font-size: 12px;
+}
+.menu-area {
+	height: 48px;
+}
+.slicknav_btn {
+	background-color: #0C3B67;
+}
+.front img {
+	height: 251px;
+}
+.serviceBox {
+	height: 303px;
+}
+.singlePackage img, .singleDeal img, .tblogSingle img, .articleSingle img {
+	height: auto;
+}
+.piShadow {
+	display: none;
+}
+.extra-link ul li {
+	width: 100%;
+	float: none;
+	padding: 7px 0;
+}
+.extra-section {
+	padding: 40px 0;
+}
+.carouselitem {
+	padding: 30px;
+	min-height: auto;
+}
+.app-download-area {
+	padding: 50px 0;
+}
+.logoBottom img {
+	width: 200px;
+}
+.footer-top {
+	margin-bottom: 0;
+}
+}
+
+@media screen and (max-width: 380px) {
+
+}
+
+@media screen and (max-width: 360px) {
+
+}
+
+@media screen and (max-width: 320px) {
+
+}
