@@ -1066,10 +1066,6 @@ Homepage Style
 .search-output-area {
 	padding: 40px 0 80px 0;
 }
-.search-output ul li {
-	padding: 20px 0;
-	border-bottom: 1px solid #e8e8e8;
-}
 .rounded-circle {border-radius: 50% !important;}
 .rounded-5 {border-radius: 5px !important;}
 .font-weight-bold {font-weight: 700 !important;}
@@ -1106,7 +1102,7 @@ Homepage Style
 .dr-appointment {
 	float: left;
 }
-.dr-appointment a {
+.dr-appointment a{
 	margin-top: 33px;
 	margin-bottom: 20px;
 }
@@ -1135,6 +1131,112 @@ Homepage Style
 .branch-area {
 	margin-bottom: 26px;
 }
+.border-bottom{
+	border-bottom: 1px solid #e8e8e8;
+	padding: 12px 0;
+}
+.doctor-grid{
+	padding: 20px 0;
+	border-bottom: 1px solid #e8e8e8;
+}
+.dr-appointment button{
+	margin-top: 33px;
+	margin-bottom: 20px;
+}
+.btn-time {
+	background: #fff;
+	width: 84px;
+	border-radius: 3px;
+	border: 1px solid #e0e0e4;
+	padding: 5px 0;
+	color: #2d2d32;
+	cursor: pointer;
+}
+.btn-time:hover {
+	background: #f1f1f1;
+	color: #217ED3;
+	border: 1px solid #217ED3;
+}
+.slot-label {
+	width: 15%;
+	float: left;
+}
+.time-slots {
+	width: 85%;
+	float: left;
+}
+.time-slots ul li {
+	width: 14%;
+	float: left;
+	margin-bottom: 14px;
+}
+.morning-slot, .afternoon-slot, .evening-slot {
+	border-bottom: 1px solid #f1f1f1;
+	padding-bottom: 8px;
+	padding-top: 15px;
+}
+.night-slot {
+	padding-top: 15px;
+}
+
+/*** Appointment PANEL INFO ***/
+.panel.with-nav-tabs .panel-heading{
+    padding: 5px 5px 0 5px;
+}
+.panel.with-nav-tabs .nav-tabs{
+	border-bottom: none;
+}
+.panel.with-nav-tabs .nav-justified{
+	margin-bottom: -1px;
+}
+.panel-heading .d-block {
+	display: block;
+	font-size: 10px;
+	font-weight: 500;
+}
+.with-nav-tabs.panel-info .nav-tabs > li > a,
+.with-nav-tabs.panel-info .nav-tabs > li > a:hover,
+.with-nav-tabs.panel-info .nav-tabs > li > a:focus {
+	color: #31708f;	
+	text-align: center;
+}
+.with-nav-tabs.panel-info .nav-tabs > .open > a,
+.with-nav-tabs.panel-info .nav-tabs > .open > a:hover,
+.with-nav-tabs.panel-info .nav-tabs > .open > a:focus,
+.with-nav-tabs.panel-info .nav-tabs > li > a:hover,
+.with-nav-tabs.panel-info .nav-tabs > li > a:focus {
+	color: #31708f;
+	background-color: #bce8f1;
+	border-color: transparent;
+}
+.with-nav-tabs.panel-info .nav-tabs > li.active > a,
+.with-nav-tabs.panel-info .nav-tabs > li.active > a:hover,
+.with-nav-tabs.panel-info .nav-tabs > li.active > a:focus {
+	color: #31708f;
+	background-color: #fff;
+	border-color: #bce8f1;
+	border-bottom-color: transparent;
+	font-size: 14px;
+	font-weight: 600;
+}
+.with-nav-tabs.panel-info .nav-tabs > li.dropdown .dropdown-menu {
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+.with-nav-tabs.panel-info .nav-tabs > li.dropdown .dropdown-menu > li > a {
+    color: #31708f;   
+}
+.with-nav-tabs.panel-info .nav-tabs > li.dropdown .dropdown-menu > li > a:hover,
+.with-nav-tabs.panel-info .nav-tabs > li.dropdown .dropdown-menu > li > a:focus {
+    background-color: #bce8f1;
+}
+.with-nav-tabs.panel-info .nav-tabs > li.dropdown .dropdown-menu > .active > a,
+.with-nav-tabs.panel-info .nav-tabs > li.dropdown .dropdown-menu > .active > a:hover,
+.with-nav-tabs.panel-info .nav-tabs > li.dropdown .dropdown-menu > .active > a:focus {
+    color: #fff;
+    background-color: #31708f;
+}
+/********************************************************************/
 @media screen and (max-width: 480px) {
 	.profile-photo, .dr-info {
 		width: 100% !important;
@@ -1149,7 +1251,7 @@ Homepage Style
 		width: 100%;
 		text-align: center;
 	}
-.dr-appointment a.btn {
-	width: 100%;
-}
+	.dr-appointment a.btn {
+		width: 100%;
+	}
 }
