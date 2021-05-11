@@ -156,6 +156,22 @@
 .footer-top {
 	margin-bottom: 0;
 }
+.profile-photo, .dr-info {
+	width: 100% !important;
+	float: none;
+	margin-right: 0;
+}
+.drName, .drDesignation {
+	text-align: center;
+}
+.dr-appointment {
+	float: none;
+	width: 100%;
+	text-align: center;
+}
+.dr-appointment a.btn {
+	width: 100%;
+}
 }
 
 @media screen and (max-width: 380px) {
