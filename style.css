@@ -32,6 +32,9 @@ ul{
 li{
 	list-style: none;
 }
+.text-right{
+	text-align: right;
+}
 .fix{
 	display: block;
 	overflow: hidden;
@@ -149,6 +152,11 @@ li{
 @font-face {
   font-family: Montserrat-Regular;
   src: url('fonts/Montserrat-Regular.ttf'); 
+}
+
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url('fonts/Montserrat-Bold.ttf'); 
 }
 
 /*=================================/*
@@ -575,8 +583,9 @@ Homepage Style
 }
 .dpPrice span {
 	color: green;
-	font-weight: 700;
+	font-family: Montserrat-Bold;
 	margin-left: 5px;
+	font-weight:500;
 }
 .dpPrice .pull-left {
 	margin-top: 7px;
@@ -798,9 +807,10 @@ Homepage Style
 	padding: 9px 15px;
 	position: relative;
 	font-size: 14px;
-	font-weight: 500;
+	font-family: Montserrat-Bold;
 	border: 1px solid #bebdbd;
 	background: #fff;
+	font-weight:500;
 }
 .faqDoctor .panel-group .panel-heading + .panel-collapse > .list-group, .panel-group .panel-heading + .panel-collapse > .panel-body {
 	border: 1px solid #ddd;
@@ -1029,7 +1039,8 @@ Homepage Style
 
 .developer ul li a{
   color: #09CFFF;
-  font-weight: bold;
+  font-family: Montserrat-Bold;
+  font-weight:500;
 }
 
 .zoomit-expand {
@@ -1068,7 +1079,7 @@ Homepage Style
 }
 .rounded-circle {border-radius: 50% !important;}
 .rounded-5 {border-radius: 5px !important;}
-.font-weight-bold {font-weight: 700 !important;}
+.font-weight-bold {font-family: Montserrat-Bold;font-weight:500;}
 .dr-appointment .btn span {
 	display: block;
 	font-size: 12px;
@@ -1192,7 +1203,6 @@ Homepage Style
 .panel-heading .d-block {
 	display: block;
 	font-size: 10px;
-	font-weight: 500;
 }
 .with-nav-tabs.panel-info .nav-tabs > li > a,
 .with-nav-tabs.panel-info .nav-tabs > li > a:hover,
@@ -1217,7 +1227,8 @@ Homepage Style
 	border-color: #bce8f1;
 	border-bottom-color: transparent;
 	font-size: 14px;
-	font-weight: 600;
+	font-family: Montserrat-Bold;
+	font-weight:500;
 }
 .with-nav-tabs.panel-info .nav-tabs > li.dropdown .dropdown-menu {
     background-color: #d9edf7;
@@ -1237,21 +1248,144 @@ Homepage Style
     background-color: #31708f;
 }
 /********************************************************************/
-@media screen and (max-width: 480px) {
-	.profile-photo, .dr-info {
-		width: 100% !important;
-		float: none;
-		margin-right: 0;
-	}
-	.drName, .drDesignation {
-		text-align: center;
-	}
-	.dr-appointment {
-		float: none;
-		width: 100%;
-		text-align: center;
-	}
-	.dr-appointment a.btn {
-		width: 100%;
-	}
+/*****************************************
+* Appointment booking user details form
+******************************************/
+.dr-panel {
+	background: #fff;
+	border-radius: 3px;
+	margin-bottom: 20px;
+}
+.in-clinic i.fa {
+	background: #217ED3;
+	color: #fff;
+	padding: 5px;
+	border-radius: 50%;
+	font-size: 13px;
+}
+.in-clinic {
+	padding: 14px;
+	border-bottom: 1px solid #ddd;
+	font-size: 16px;
+	font-weight: 600;
+	font-family: 'Maven Pro', sans-serif;
+}
+.booking-time {
+	padding: 14px 19px;
+	border-bottom: 1px solid #ddd;
+	font-size: 14px;
+}
+.booking-date {
+	width: 50%;
+	float: left;
+}
+.dr-panel .dr-profile-excerpt{
+	padding: 14px 19px;
+	border-bottom: 1px solid #ddd;
+}
+.dr-panel .profile-photo img {
+	width: 100px;
+	height: 100px;
+}
+.dr-panel .profile-photo {
+	width: 100px;
+}
+.dr-panel .dr-profile-excerpt .dr-info {
+	width: 70%;
+}
+.dr-panel .dr-profile-excerpt .dr-info h5{
+	margin-bottom: 5px;
+}
+.dr-panel .dr-profile-excerpt .dr-info p span{
+	display: block;
+}
+.user-panel label {
+	font-family: 'Maven Pro', sans-serif;
+	font-weight: 400;
+}
+.user-panel .form-group {
+	margin-bottom: 10px;
+}
+.user-panel .form-control {
+	font-size: 13px;
+	border-radius: 2px;
+}
+.user-panel .radio,
+.user-panel .checkbox {
+  padding-left: 20px;
+  position: relative;
+  display: block;
+}
+.user-panel .radio input,
+.user-panel .checkbox input {
+  opacity: 0;
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+  margin-left: -20px;
+}
+.user-panel .radio input:checked + label::before,
+.user-panel .checkbox input:checked + label::before {
+  border-color: #00a63f;
+}
+.user-panel .radio input:checked + label::after,
+.user-panel .checkbox input:checked + label::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  left: 2px;
+  top: 4px;
+  margin-left: -20px;
+  border: 1px solid #00a63f;
+  border-radius: 50%;
+  background-color: #00a63f;
+}
+.user-panel .radio label,
+.user-panel .checkbox label {
+  display: inline-block;
+  position: relative;
+  padding-left: 5px;
+}
+.user-panel .radio label::before,
+.user-panel .checkbox label::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  left: 0;
+  top: 2px;
+  margin-left: -20px;
+  border: 1px solid #cccccc;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.user-panel .radio.disabled label,
+.user-panel .checkbox.disabled label {
+  color: #cccccc;
+}
+.user-panel .radio.disabled label::before,
+.user-panel .checkbox.disabled label::before {
+  opacity: .54;
+  border-color: #cccccc;
+}
+.user-panel .checkbox input:checked + label::before {
+  border-color: #00a63f;
+  background-color: #00a63f;
+}
+.user-panel .checkbox input:checked + label::after {
+	content: "\f00c";
+	font-family: FontAwesome;
+	font-size: 12px;
+	color: #fff;
+	top: 0;
+	left: 1px;
+	border-color: transparent;
+	background-color: transparent;
+	padding: 1px;
+}
+.user-panel .checkbox label::before {
+  border-radius: 2px;
 }
