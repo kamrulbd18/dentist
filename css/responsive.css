@@ -43,7 +43,18 @@
 .ht-left p {
 	font-size: 10px;
 }
-
+.time-slots ul li {
+	width: 103px;
+}
+.time-slots{
+	width: 100%;
+	float: none;
+}
+.slot-label {
+	width: 100%;
+	float: none;
+	margin-bottom: 15px;
+}
 }
 
 @media screen and (max-width: 767px) {
