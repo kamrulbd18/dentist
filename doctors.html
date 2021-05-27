@@ -13,10 +13,11 @@
 	<link rel="stylesheet" type="text/css" href="css/slicknav.css">	
 	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">	
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">	
-	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">	
+	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 	<link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,600,700,800&display=swap" rel="stylesheet"> 
+
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -157,24 +158,56 @@
 							</div>					
 						</div><!-- Doctor grid close -->
 						<div id="drID1" class="collapse">
+							<div class="dentalChamber">
+								<div class="owl-carousel" id="doctorChamberCarousel">
+				                    <div class="panel panel-primary">
+				                        <div class="panel-heading">
+				                            Chamber 1
+				                        </div>
+				                        <div class="panel-body">
+				                            <p>
+				                            	IBN Sina, Dhanmondi
+				                            </p>
+				                        </div>
+				                    </div>
+				                    <div class="panel panel-success">
+				                        <div class="panel-heading">
+				                            Chamber 2
+				                        </div>
+				                        <div class="panel-body">
+				                            <p>
+				                            	Labaid, Uttara
+				                            </p>
+				                        </div>
+				                    </div>
+				                    <div class="panel panel-danger">
+				                        <div class="panel-heading">
+				                            Chamber 3
+				                        </div>
+				                        <div class="panel-body">
+				                            <p>
+				                            	City Hospital, Mohammadpur
+				                            </p>
+				                        </div>
+				                    </div>
+								</div>
+			                </div>
+
 				            <div class="panel with-nav-tabs panel-info">
+
 				                <div class="panel-heading">
-				                        <ul class="nav nav-tabs">
-				                            <li class="active"><a href="#tab1default" data-toggle="tab">Today<span class="d-block">19 Slots Available</span></a></li>
-				                            <li><a href="#tab2default" data-toggle="tab">Tomorrow<span class="d-block">19 Slots Available</span></a></li>
-				                            <li><a href="#tab3default" data-toggle="tab">Thu, 13 May<span class="d-block">19 Slots Available</span></a></li>
-				                            <li class="dropdown">
-				                                <a href="#" data-toggle="dropdown">More <span class="caret"></span><span class="d-block">Next Date</span></a>
-				                                <ul class="dropdown-menu" role="menu">
-				                                    <li><a href="#tab4default" data-toggle="tab">Fri, 14 May</a></li>
-				                                    <li><a href="#tab5default" data-toggle="tab">Sat, 16 May</a></li>
-				                                </ul>
-				                            </li>
-				                        </ul>
+			                        <ul class="nav nav-tabs">
+										<li><a class="nav-link active" href="#tab1default" role="tab" data-toggle="tab">Today<span class="d-block">19 Slots Available</span></a></li>
+										<li><a class="nav-link" href="#tab2default" role="tab" data-toggle="tab">Tomorrow<span class="d-block">19 Slots Available</span></a></li>
+										<li><a class="nav-link" href="#tab3default" role="tab" data-toggle="tab">Thu, 13 May<span class="d-block">19 Slots Available</span></a></li>
+										<li><a class="nav-link" href="#tab4default" role="tab" data-toggle="tab">Friday, 14 May<span class="d-block">19 Slots Available</span></a></li>
+										<li><a class="nav-link" href="#tab5default" role="tab" data-toggle="tab">Saturday, 15 May<span class="d-block">19 Slots Available</span></a></li>
+			                        </ul>
 				                </div>
+
 				                <div class="panel-body">
 				                    <div class="tab-content">
-				                        <div class="tab-pane fade in active" id="tab1default">
+				                        <div role="tabpanel" class="tab-pane fade in active" id="tab1default">
 											<div class="appointment-container">
 												<div class="morning-slot fix">
 													<div class="slot-label"><i class="fa fa-sun-o"></i> Morning</div>
@@ -341,7 +374,7 @@
 												</div>
 											</div>
 				                        </div><!-- tab-pane close -->
-				                        <div class="tab-pane fade" id="tab2default">
+				                        <div role="tabpanel" class="tab-pane fade" id="tab2default">
 											<div class="appointment-container">
 												<div class="morning-slot fix">
 													<div class="slot-label"><i class="fa fa-sun-o"></i> Morning</div>
@@ -508,7 +541,7 @@
 												</div>
 											</div>
 				                        </div><!-- tab-pane close -->
-				                        <div class="tab-pane fade" id="tab3default">
+				                        <div role="tabpanel" class="tab-pane fade" id="tab3default">
 											<div class="appointment-container">
 												<div class="morning-slot fix">
 													<div class="slot-label"><i class="fa fa-sun-o"></i> Morning</div>
@@ -675,7 +708,7 @@
 												</div>
 											</div>
 				                        </div><!-- tab-pane close -->
-				                        <div class="tab-pane fade" id="tab4default">
+				                        <div role="tabpanel" class="tab-pane fade" id="tab4default">
 											<div class="appointment-container">
 												<div class="morning-slot fix">
 													<div class="slot-label"><i class="fa fa-sun-o"></i> Morning</div>
@@ -842,7 +875,7 @@
 												</div>
 											</div>
 				                        </div><!-- tab-pane close -->
-				                        <div class="tab-pane fade" id="tab5default">
+				                        <div role="tabpanel" class="tab-pane fade" id="tab5default">
 											<div class="appointment-container">
 												<div class="morning-slot fix">
 													<div class="slot-label"><i class="fa fa-sun-o"></i> Morning</div>
@@ -1011,9 +1044,10 @@
 				                        </div><!-- tab-pane close -->
 				                    </div>
 				                </div><!-- pane body close -->
+
 				            </div><!-- panel close -->
 						</div><!-- collapse close -->
-					
+
 						<div class="doctor-grid fix">
 							<div class="dr-profile-excerpt">
 								<div class="profile-photo text-center">

@@ -144,4 +144,28 @@ $('#appBanner').owlCarousel({
         autoFocus:true
     })
 
+// Doctor Chamber Slider
+$('#doctorChamberCarousel').owlCarousel({
+    loop:false,
+    margin:20,
+    nav:false,
+    smartSpeed: 400,
+    autoplay: 4000,
+    responsive:{
+        300:{
+            items:1
+        },
+        400:{
+            items:2
+        },
+        800:{
+            items:3
+        },
+        1200:{
+            items:3
+        }
+    }
+}); 
+
+
 });

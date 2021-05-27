@@ -78,7 +78,10 @@
 }
 
 @media screen and (max-width: 480px) {
-#searchLocation {
+.dental-search input[type="text"] {
+	padding-left: 22px;
+}
+.searchLocation {
 	width: 100%;
 	margin-right: 0;
 	margin-bottom: 13px;
