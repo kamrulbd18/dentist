@@ -1080,7 +1080,7 @@ Homepage Style
 .rounded-circle {border-radius: 50% !important;}
 .rounded-5 {border-radius: 5px !important;}
 .font-weight-bold {font-family: Montserrat-Bold;font-weight:500;}
-.dr-appointment .btn span {
+.dr-appointment .btn span, .consultaion-fee .btn span{
 	display: block;
 	font-size: 12px;
 	font-weight: 400;
@@ -1397,4 +1397,7 @@ Homepage Style
 }
 .panel.with-nav-tabs .panel-heading .nav-tabs .nav-link {
 	white-space: nowrap;
+}
+.dentalChamber .panel-body {
+	min-height: 79px;
 }
